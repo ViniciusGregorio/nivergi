@@ -132,7 +132,7 @@ function confirmar(){
   soltarConfete(); // confete visual
 
   // Chamada ao Apps Script via fetch
-  fetch("https://script.google.com/macros/s/AKfycbyGn9aCJC4Vbc--OO6ecIPouc2oC0Ib6nRnTLA148jdxUaPyPBVTvmJeEGEOmQ3Lw2VkA/exec?nome="+encodeURIComponent(nome))
+  fetch("https://script.google.com/macros/s/AKfycbx9D_Sv8rUYnQKPzGSwoAVutu2VgarKVo0JjSdI9KcH8OkEvXLekiTmnI5hq61YIfcv-Q/exec?nome="+encodeURIComponent(nome))
     .then(res => res.text())
     .then(res => {
       msg.textContent = res; // mostra mensagem de sucesso
